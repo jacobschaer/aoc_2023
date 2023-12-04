@@ -77,8 +77,6 @@ def part_2(input_text):
                     stars[(row_index, column_index)] = set()
 
     for (row, column), number in numbers:
-        found_adjacent_symbol = False
-        #print((row, column, number))
         for column_offset in range(len(str(number))):
             # This is lazy - we can be slightly smarter and only check left/right
             # if we're at the ends, but meh...
